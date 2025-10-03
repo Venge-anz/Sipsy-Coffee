@@ -8,7 +8,7 @@ export const Card1 = () => {
       <Navbar></Navbar>
       {/* Contenido contenedor 1 */}
       <div
-        className="md:flex md:justify-center items-center"
+        className="md:flex md:justify-center items-center "
         style={{ backgroundColor: "#93C572" }}
       >
         {/* Contenido izquierda */}

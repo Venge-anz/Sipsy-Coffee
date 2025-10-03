@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .notable-regular {
   font-family: "Notable", sans-serif;
   font-weight: 400;

@@ -12,19 +12,14 @@ export const Card3 = () => {
             <img src="public/pngwing.com.png" className="w-60 "></img>
 
             {/* Letras */}
-            <div className="flex flex-col gap-10 ml-10">
-              <div className="flex items-center gap-4">
-                <div className="text-4xl lobster-regular ">
+            <div className="flex flex-col gap-10 ml-10 bg-amber-100 mr-30 rounded-2xl p-5 mb-3">
+              <div className="flex items-center">
+                <div className="text-4xl lobster-regular  ">
                   Visit our store!
                 </div>
-                <img
-                  src="public/cofeePixel.jpeg"
-                  alt="coffeePixel"
-                  className="w-10"
-                ></img>
               </div>
 
-              <div className="font-light italic mr-30">
+              <div className="font-light italic">
                 At Casa Cafe, we believe that every experience matters. From
                 rich, aromatic coffees to soothing teas, vibrant matcha drinks,
                 and delicious Japanese dishes, we craft everything with care and
