@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import { Button } from "../components/button";
 import { Navbar } from "../components/Navbar";
 
@@ -7,10 +8,7 @@ export const Card1 = () => {
       {/* Navbar */}
       <Navbar></Navbar>
       {/* Contenido contenedor 1 */}
-      <div
-        className="md:flex md:justify-center items-center "
-        style={{ backgroundColor: "#93C572" }}
-      >
+      <div className="md:flex md:justify-center items-center bg-[#93C572] ">
         {/* Contenido izquierda */}
         <div className="flex flex-col">
           {/* Titulo */}
@@ -32,7 +30,9 @@ export const Card1 = () => {
               matchas around you.
             </p>
             {/* Boton */}
-            <Button nombre={"Register"}></Button>
+            <NavLink to="/register">
+              <Button nombre={"Register"}></Button>
+            </NavLink>
           </div>
           <div className="flex justify-center md:justify-end"></div>
         </div>

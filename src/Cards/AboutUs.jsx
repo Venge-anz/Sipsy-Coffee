@@ -1,9 +1,9 @@
 import { Button } from "../components/button";
 
-export const Card3 = () => {
+export const AboutUs = () => {
   return (
     <>
-      <div className="flex flex-col" style={{ backgroundColor: "#93C572" }}>
+      <div id="aboutUs" className="flex flex-col bg-[#93C572] scroll-auto">
         <div className="flex flex-col md:flex-row justify-baseline">
           <img src="public/store.jpg" alt="storeImage" className="w-full"></img>
 
