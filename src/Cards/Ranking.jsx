@@ -6,14 +6,11 @@ const imagenes = [
   { id: 3, imagen: "/TopVoted/coffee3.jpg" },
 ];
 
-console.log(imagenes);
-console.log("hola");
-
-export const Card2 = () => {
+export const TopVoted = () => {
   return (
     <>
       {/* Contenido contenedor 1 */}
-      <div className="flex flex-col items-center bg-amber-100">
+      <div id="Ranking" className="flex flex-col items-center bg-amber-100">
         {/* Titulo */}
         <div className="lobster-regular text-5xl m-10 border-b-2">
           Top voted this week
@@ -21,9 +18,11 @@ export const Card2 = () => {
         {/* contenedores imagenes */}
         <div className="flex flex-wrap justify-center md:justify-between gap-20 ">
           {imagenes.map((img) => (
-            <div className=" flex flex-col items-center border-1 rounded-3xl h-full p-5 gap-5 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 ">
+            <div
+              key={img.id}
+              className=" flex flex-col items-center border-1 rounded-3xl h-full p-5 gap-5 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 "
+            >
               <img
-                key={img.id}
                 src={img.imagen}
                 alt="imagenTop"
                 className="w-52 h-52 rounded-3xl"
