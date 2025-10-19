@@ -18,7 +18,7 @@ export const Card1 = () => {
               <img src="/star1.png" alt="star1"></img>
             </div>
             <div
-              className="uppercase notable-regular text-2xl
+              className="uppercase bagel-fat-one-regular text-2xl
                     md:text-5xl text-right pb-5 "
             >
               Share and vote <br />
