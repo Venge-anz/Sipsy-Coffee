@@ -18,13 +18,16 @@ export const Discover = () => {
           ></img>
         </div>
 
+        <NavLink to="/description">
+          <TbPhotoPlus className="text-3xl cursor-pointer ransition duration-200 ease-in-out hover:scale-115 m-3 " />
+        </NavLink>
         {/* Contenedor de imagenes */}
 
-        <div className="flex md:flex-wrap gap-10 mb-10 border-2 border-amber-900 rounded-2xl p-20 ">
+        <div className="flex md:flex-wrap gap-10 mb-10 border-2 border-amber-900 rounded-2xl p-10 ">
           {formData && formData.length > 0 ? (
             formData.map((imagen, id) => (
               <div key={id}>
-                <div className="border-amber-50 rounded-4xl bg-amber-100 h-[400px] w-[300px] overflow-hidden">
+                <div className="border-amber-50 rounded-4xl bg-amber-100 h-full md:w-[300px] overflow-hidden">
                   <img
                     src={URL.createObjectURL(imagen.file)}
                     alt="Selected"
@@ -36,11 +39,8 @@ export const Discover = () => {
                     </div>
                     <div className="font-extralight">@{imagen.username}</div>
                   </div>
-                  <div className="m-2 italic">{imagen.ingredients}</div>
+                  <div className="m-2 italic p-1">{imagen.ingredients}</div>
                 </div>
-                <NavLink to="/description">
-                  <TbPhotoPlus className="text-3xl cursor-pointer ransition duration-200 ease-in-out hover:scale-115 m-3 " />
-                </NavLink>
               </div>
             ))
           ) : (

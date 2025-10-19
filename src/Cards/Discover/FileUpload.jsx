@@ -61,6 +61,7 @@ export const FileUpload = () => {
     if (!newImageData.username.trim()) {
       newErrors.username = "Don’t forget your username!";
     }
+
     if (!newImageData.ingredients.trim()) {
       newErrors.ingredients = "List your ingredients, please!";
     }
@@ -151,6 +152,10 @@ export const FileUpload = () => {
                     maxLength="20"
                     value={infoImage.username}
                     onChange={handleForm}
+                    //evitar los espacios
+                    onKeyDown={(e) => {
+                      if (e.key === " ") e.preventDefault();
+                    }}
                   ></input>
                   {errors.username && (
                     <p className="text-red-600 text-sm">{errors.username}</p>

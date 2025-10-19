@@ -13,7 +13,7 @@ export const TopVoted = () => {
       <div id="Ranking" className="flex flex-col items-center bg-amber-100">
         {/* Titulo */}
         <div className="lobster-regular text-5xl m-10 border-b-2">
-          Top voted this week
+          Top voted last week
         </div>
         {/* contenedores imagenes */}
         <div className="flex flex-wrap justify-center md:justify-between gap-20 ">
